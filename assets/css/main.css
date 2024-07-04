@@ -8,14 +8,17 @@
     --color-icon: #D9D9D9;
     --color-font-1: #F8F7FD;
     --color-font-2: #7C7A77;
+    --color-font-3: #B51B75;
     --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    --background-main: rgb(94, 22, 117); /* RGB del color del main */
+    --background-footer: rgb(181, 27, 117); /* RGB del color del footer */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'JJ2', sans-serif;
 }
 
 html {
@@ -27,7 +30,9 @@ html {
 
 body {
     position: relative;
-    background-color: var(--background-page-dark);
+    background: linear-gradient(to right top, #5e1675, #520c4e, #3d0b2e, #240b18);
+    background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
     height: 100%;
     font-size: 3rem;
@@ -35,6 +40,21 @@ body {
     box-sizing: border-box;
     z-index: 100;
     overflow-x: hidden;
+    background-size: 600% 600%;
+    animation: jazz 28s ease infinite;
+    filter: drop-shadow(1px 1px 8px black);
+}
+
+.jazz-animation {
+    background: linear-gradient(5deg, #5e1675, #b51b75, #000000);
+    background-size: 600% 600%;
+    animation: jazz 28s ease infinite;
+}
+
+@keyframes jazz {
+    0% {background-position: 51% 0%}
+    50% {background-position: 50% 100%}
+    100% {background-position: 51% 0%}
 }
 
 #banner {
@@ -100,8 +120,8 @@ body {
     max-width: 32%;
     height: auto;
     margin-top: 10%;
-    position: relative; /* Asegurarse de que la imagen esté en el contexto de apilamiento */
-    z-index: 1; /* Llevar la imagen por delante del sombreado */
+    position: relative;
+    z-index: 1; 
 }
 
 #section-title::before {
@@ -168,7 +188,7 @@ body {
     filter: drop-shadow(2px 2px 4px black);
 }
 
-.main {
+#main {
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -177,47 +197,75 @@ body {
     width: 100%;
     padding: 2rem;
     box-sizing: border-box;
-}
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #343A40;
-    color: white;
 }
 
 .main-yt-video {
     width: 100%;
+    height: 600px;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    padding: 50px 0 50px 0;
 }
 
 .main-yt-video iframe {
     width: 100%;
-    max-width: 560px;
-    height: 315px;
 }
 
 .main-buttons {
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: space-evenly;
+
 }
 
 .button {
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #fde500;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #000000;
+    filter: drop-shadow(2px 2px 4px black);
+    font-family: 'JJ2', sans-serif;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #fde4008a;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.footer-profiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.profile {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
