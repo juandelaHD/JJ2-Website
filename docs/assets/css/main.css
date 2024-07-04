@@ -305,3 +305,7 @@ body {
     flex-direction: column;
 }
 
+.profile img {
+    height: 200px;
+    margin-bottom: 10px;
+}
