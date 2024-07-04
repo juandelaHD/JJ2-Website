@@ -4,7 +4,7 @@
     <br />
     <br />
     <a href="https://juandelahd.github.io/JJ2-Website/">
-      <img src="assetsReadme/game_logo.png" alt="Jazz Jackrabbit 2 Logo" style="width:20%;">
+      <img src="assetsReadme/game_logo.png" alt="Jazz Jackrabbit 2 Logo" style="width:30%;">
     </a>
   </h1>
 </div>
@@ -21,8 +21,6 @@ Explore, reminisce, and rediscover the magic of Jazz Jackrabbit 2 through our me
 - *Contact Developers*: Reach out to the development team for support, feedback, or inquiries.
 
 <div align="center">
-    <br>
-    </br>
     <a href="https://juandelahd.github.io/JJ2-Website/">
         <img src="assetsReadme/landing_page.png" alt="Jazz Jackrabbit 2 Landing Page Image" style="width:90%;">
     </a>
