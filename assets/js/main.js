@@ -27,16 +27,16 @@ async function getLatestVersion() {
     return latestVersion;
 }
 
-document.getElementById('install').addEventListener('click', async () => {
+// Function to update the INSTALL button's href attribute
+async function updateInstallButton() {
+    const installButton = document.getElementById('install');
     try {
-        const downloadLink = await getLatestVersion();
-        if (downloadLink) {
-            window.location.href = downloadLink; // Esto redirige el navegador al enlace de descarga
-        } else {
-            alert('No se encontró la última versión.');
-        }
+        const latestReleaseUrl = await fetchLatestGameRelease();
+        installButton.href = latestReleaseUrl;
     } catch (error) {
-        console.error('Error al obtener la última versión:', error);
-        alert('Hubo un error al intentar obtener la última versión.');
+        console.error('Error fetching the latest game release URL:', error);
     }
-})
+}
+
+// Call the function to update the INSTALL button on page load
+document.addEventListener('DOMContentLoaded', updateInstallButton);
