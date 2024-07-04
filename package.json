@@ -1,0 +1,18 @@
+{
+  "name": "jj2-website",
+  "version": "1.0.0",
+  "description": "This repository hosts the source code and assets for the Jazz Jackrabbit 2 website. The site provides information about the game, including its features, download links, and community resources. It's a central hub for fans of the classic side-scrolling platformer, offering a modern tribute to this beloved game.",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.4",
+    "puppeteer": "^22.12.1"
+  }
+}
