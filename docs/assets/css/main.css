@@ -308,5 +308,6 @@ body {
 
 .profile img {
     height: 200px;
+    border-radius: 10%;
     margin-bottom: 10px;
 }
