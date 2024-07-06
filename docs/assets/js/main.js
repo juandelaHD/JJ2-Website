@@ -37,6 +37,7 @@ async function updateInstallButton() {
         console.error('Error fetching the latest game release URL:', error);
     }
 }
-
+/*
 // Call the function to update the INSTALL button on page load
 document.addEventListener('DOMContentLoaded', updateInstallButton);
+*/
